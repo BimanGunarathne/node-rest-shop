@@ -7,9 +7,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
-mongoose.connect('mongodb+srv://node-shop:' + process.env.MONGO_ATLAS_PW + '@node-rest-shop.pdekhfz.mongodb.net/?retryWrites=true&w=majority', {
-    useMongoClient: true
-})
+mongoose.connect('mongodb+srv://node-shop:' + process.env.MONGO_ATLAS_PW + '@node-rest-shop.pdekhfz.mongodb.net/?retryWrites=true&w=majority');
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
