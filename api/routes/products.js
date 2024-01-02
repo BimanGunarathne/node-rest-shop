@@ -17,7 +17,7 @@ router.get('/', (req, res, next) => {
                         _id: doc._id,
                         request: {
                             type: 'GET',
-                            urll: 'http://localhost:300/products/' + doc._id
+                            url: 'http://localhost:300/products/' + doc._id
                         }
                     }
                 })
